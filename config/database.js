@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 
-DB_MONGO = 'mongodb://localhost:27017/estacionamientoDVJ'
+//DB_MONGO = 'mongodb://localhost:27017/estacionamientoDVJ'
+DB_MONGO = 'mongodb+srv://daniela:danielaruiz@cluster1.8zhrttp.mongodb.net/estacionamientoDVJ?retryWrites=true&w=majority'
 
 const connectDb = async () => {
   try {
