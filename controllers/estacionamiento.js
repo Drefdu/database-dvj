@@ -1,4 +1,4 @@
-const estacionamientoModelo = require('../modelos/estacionamiento')
+const estacionamientoModelo = require('../models/estacionamiento')
 
 exports.getEstacionamiento = async (req, res) => {
   try {

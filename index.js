@@ -14,7 +14,9 @@ app.use(
 );
 
 //rutas
-app.use('/estacionamiento', require('./rutas/estacionamiento'));
+app.use('/estacionamiento', require('./routes/estacionamiento'));
+app.use('/usuarios', require('./routes/usuarios'));
+
 
 
 app.listen(port, () => {
