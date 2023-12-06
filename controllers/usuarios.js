@@ -118,10 +118,10 @@ exports.usuariosLogin = async (req, res) => {
             if (contrasenaValida) {
                 res.json(usuarioEncontrado);
             } else {
-                return res.status(401).json({ msg: 'Contraseña inválida' });
+                return res.status(200).json({ msg: 'Contraseña inválida' });
             }
         } else {
-            return res.status(404).json({ msg: 'Usuario no encontrado' });
+            return res.status(200).json({ msg: 'Usuario no encontrado' });
         }
     } catch (error) {
         console.error(error);
